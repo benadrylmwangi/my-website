@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(174, 185, 151);
+  background-image: -webkit-linear-gradient();
+  font-size: screen size;
+
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:0px ;
+  
+
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.product {
+  margin: 0px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #555;
+}
+
+.cart-details {
+  margin: 10px;
+  padding: 15px;
+  border-top: 2px solid #dabebe;
+}
+h4{
+ background-color:rgb(242, 0, 255) ; 
+}
+
+/* Container that holds products */
+.container {
+  display: flex;              /* Arrange children side by side */
+  flex-wrap: wrap;            /* Allow wrapping if screen is small */
+  gap: 20px;                  /* Space between products */
+  justify-content: space-around; /* Even spacing */
+}
+
+.product {
+  width: 200px;               /* Fix product box size */
+  text-align: center;         /* Center content */
+  border: 1px solid #ddd;     /* Optional: give border */
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.product img {
+  width: 200px;     /* Fixed width */
+  height: 280px;    /* Fixed height */
+  object-fit: cover; /* Crop/scale the image nicely */
+  border-radius:0px; /* Optional: rounded corners */
+}
+.container{
+  background-color: violet;
+  padding: 5px;
+
+}

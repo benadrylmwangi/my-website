@@ -1,0 +1,119 @@
+{% extends "base.html"%}
+{%block tittle%}Home{%endblock%}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+     <link rel="stylesheet" href="{{ url_for('static', filename='stylep.css') }}">
+         <link rel="stylesheet" href="{{ url_for('static', filename='static/style1.css') }}">
+      
+{%block content%}
+<body>
+       <h1>PRODUCT AVAILABLE</h1>
+    <div class="cart" method="GET">
+      🛒 Cart: <span id="cart-count">0</span>
+    </div>
+    <div class="container">
+      <div class="product">
+          <img src="{{ url_for('static', filename='image2/530006854_122122558952924413_2335178785596164003_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 1</h2>
+        <p>Price:sh 2,000</p>
+        <button onclick="addToCart('Product 1', 2000)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/481475446_574868458941155_5432519814390987113_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 2</h2>
+        <p>Price:sh 2,300</p>
+        <button onclick="addToCart('Product 2', 2300)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="{{ url_for('static', filename='image/481826566_574868295607838_2365678200954871663_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 3</h2>
+        <p>Price:sh 2,400</p>
+        <button onclick="addToCart('Product 3', 2400)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/481986273_574868078941193_4589385813879558229_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 4</h2>
+        <p>Price:sh 3,500</p>
+        <button onclick="addToCart('Product 4', 3500)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/482026260_574868095607858_5433492151128479232_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 5</h2>
+        <p>Price:sh3,300</p>
+        <button onclick="addToCart('Product 5', 3300)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/482201653_574868185607849_7918181818702817758_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 6</h2>
+        <p>Price:Sh 2,700</p>
+        <button onclick="addToCart('Product 6', 2700)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/482347107_574868322274502_4273572624939354724_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 7</h2>
+        <p>Price:sh 4,000</p>
+        <button onclick="addToCart('Product 7', 4000)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/499417699_634704239624243_127925167672263629_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 8</h2>
+        <p>Price:sh 3,700</p>
+        <button onclick="addToCart('Product 8', 3700)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/514920997_667992732962060_1212195795243750779_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 9</h2>
+        <p>Price:sh 3,000</p>
+        <button onclick="addToCart('Product 9', 3000)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/531102196_704994912595175_5216266999475445517_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 10</h2>
+        <p>Price:sh 4,500</p>
+        <button onclick="addToCart('Product 10', 4500)">Add to Cart</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
+         <img src="{{ url_for('static', filename='image/531985347_704994929261840_271769207268743708_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 11</h2>
+        <p>Price:sh 3,900</p>
+        <button onclick="addToCart('Product 11`', 3900)">Add to Cart</button>
+      </div>
+      <div class="product">
+         <img src="{{ url_for('static', filename='image/533686547_704994845928515_57910140850798761_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 12</h2>
+        <p>Price:sh 2,700</p>
+        <button onclick="addToCart('Product 12', 2700)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='/image/533596278_704994925928507_3479466772897929622_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 13</h2>
+        <p>Price:sh 3,600</p>
+        <button onclick="addToCart('Product 13', 3600)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/535886428_713350638426269_1272189977030584245_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 14</h2>
+        <p>Price:sh1,900</p>
+        <button onclick="addToCart('Product 14', 1900)">Add to Cart</button>
+      </div>
+      <div class="product">
+          <img src="{{ url_for('static', filename='image/544634007_723896934038306_6734124503431172099_n.jpg') }}" alt="My Logo" width="200">
+        <h2>Product 15</h2>
+        <p>Price:sh 3,700</p>
+        <button onclick="addToCart('Product 15', 3700)">Add to Cart</button>
+      </div>
+    </div>
+  <section class="cart-details">
+   
+    <ul id="cart-items"></ul>
+    <p><strong>Total: sh<span id="cart-total">0</span></strong></p>
+  </section>
+  </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+{%endblock%}

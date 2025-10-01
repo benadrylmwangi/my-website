@@ -1,0 +1,60 @@
+
+{% extends "base.html" %}
+{% block title %}Payment{% endblock %}
+
+{% block content %}
+<body>
+  <header>
+    <!-- Payment Section -->
+    <div class="payment-container">
+      <h2>Complete Your Payment</h2>
+
+      <!-- ✅ Show total amount (read-only) -->
+      <div class="total-box">
+        <label>Total Amount:</label>
+        <input type="text" id="paymentAmount" readonly>
+      </div>
+
+      <form id="paymentForm">
+        <!-- Dropdown for Payment Method -->
+        <label for="method">Select Payment Method:</label>
+        <select id="method" required>
+          <option value="">-- Select --</option>
+          <option value="card">Credit / Debit Card</option>
+          <option value="mpesa">M-Pesa</option>
+          <option value="airtel">Airtel Money</option>
+        </select>
+
+        <!-- Card Payment Fields -->
+        <div class="method-fields" id="cardFields" style="display:none;">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" maxlength="16" placeholder="XXXX XXXX XXXX XXXX">
+
+          <label for="expiry">Expiry Date:</label>
+          <input type="month" id="expiry">
+
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" maxlength="3">
+        </div>
+
+        <!-- M-Pesa Payment Fields -->
+        <div class="method-fields" id="mpesaFields" style="display:none;">
+          <label for="mpesaPhone">M-Pesa Phone Number:</label>
+          <input type="tel" id="mpesaPhone" placeholder="07XXXXXXXX" maxlength="10">
+        </div>
+
+        <!-- Airtel Money Payment Fields -->
+        <div class="method-fields" id="airtelFields" style="display:none;">
+          <label for="airtelPhone">Airtel Money Phone Number:</label>
+          <input type="tel" id="airtelPhone" placeholder="07XXXXXXXX" maxlength="10">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Pay Now</button>
+      </form>
+
+      <div id="confirmation"></div>
+      <script src="{{ url_for('static', filename='payment.js') }}"></script>
+    </div>
+  </header>
+</body>
+{% endblock %}

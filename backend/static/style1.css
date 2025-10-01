@@ -1,0 +1,90 @@
+
+/* Make body fill the screen */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Flexbox container */
+.REGISTER{
+  display: flex;
+  height: 100vh; /* full height of the screen */
+}
+
+/* Each section takes 50% width */
+.login, .registration{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+/* Different background colors */
+.login {
+  background: #f0f0f0;
+}
+
+.registration{
+  background: #d0e8f2;
+}
+
+/* Style inputs & buttons */
+form input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.login, .registration {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  transition: 0.3s ease; /* smooth hover effect */
+}
+
+/* Background colors */
+.login {
+  background: #f0f0f0;
+}
+
+.register {
+  background: #d0e8f2;
+}
+
+/* Hover effect for both */
+.login:hover, .registration:hover {
+  transform: scale(1.05);       /* zoom slightly */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* shadow effect */
+  z-index: 1; /* bring to front when hovered */
+}
+
+/* Form inputs */
+form input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  width: 200px;
+}
+
+form button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #555;
+}

@@ -1,0 +1,40 @@
+header{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+/* Style header */
+header {
+  background: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style links */
+header a {
+  color: rgb(220, 35, 35);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+header a:hover {
+  background-color: blue;
+  color: rgb(68, 0, 255); 
+  text-emphasis-color: blue;                /* change text color */
+  border-bottom: 2px solid yellow; /* underline on hover */
+  letter-spacing: 1px;           /* spacing effect */
+}
+h1{
+    color:rgb(0, 204, 255);
+}
+h4:hover{
+  background-color: rgb(30, 210, 96);
+  transition: 3s;
+}
+main{
+  background-color: rgb(126, 149, 102);
+}
