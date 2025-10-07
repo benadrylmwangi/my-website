@@ -6,6 +6,7 @@ from flask_login import UserMixin
 from flask_login import login_user,login_required,current_user,logout_user
 from flask import Flask,session
 from datetime import timedelta
+from flask import Flask, request, jsonify
 auth = Blueprint("auth", __name__)
 @auth.route('/login', methods=["GET", "POST"])
 def login():
@@ -75,3 +76,10 @@ def logout():
     session.clear()
     logout_user()
     return redirect(url_for("auth.login"))
+@auth.route("/stk_push", methods=["POST"])
+def stk_push():
+    return redirect(url_for( "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"))
+    
+
+    
+

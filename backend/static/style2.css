@@ -8,8 +8,8 @@ body {
 }
 
 header {
-  background: #333;
-  color: rgb(151, 121, 121);
+  background: #db0a0a;
+  color: rgb(25, 224, 42);
   padding: 15px;
   display: flex;
   justify-content: space-between;

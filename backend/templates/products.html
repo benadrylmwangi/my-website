@@ -16,14 +16,35 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 </head>
+  <style>
+    body { font-family: Arial; }
+    #searchBox {
+      width: 250px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
 <body>
+
+  <h2>🔍 Search Products</h2>
+  <input type="text" id="searchBox" placeholder="Search products...">
+
      <h1>PRODUCT AVAILABLE</h1>
     <div class="cart" method="GET">
       🛒 Cart: <span id="cart-count">0</span>
     </div>
   <div>
    <div class="container">
-      <div class="product">
+      <div class="product 1">
           <img src="{{ url_for('static', filename='image2/522956285_122253236438131113_3442032123487129308_n.jpg') }}" alt="My Logo" width="200">
         <h2>Product 1</h2>
         <p>Price:sh 2,000</p>
@@ -319,13 +340,24 @@
       </div>
     </div>
   </div>
+   
+  <script>
+    const searchBox = document.getElementById("searchBox"); 
+    const items = document.querySelectorAll(".product");
 
-
+    searchBox.addEventListener("keyup", () => {
+      const query = searchBox.value.toLowerCase();
+      items.forEach(item => {
+        item.classList.toggle("hidden", !item.textContent.toLowerCase().includes(query));
+      });
+    });
+  </script>
   <section class="cart-details">
-    <h3>check your shopping list here</h3>
     <ul id="cart-items"></ul>
     <p><strong> <span id="cart-total">0</span></strong></p>
   </section>
+
+
    <script src="{{ url_for('static', filename='script.js') }}"></script>
   <a href="/ordernow">
   <button>Order Now</button>

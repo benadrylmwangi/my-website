@@ -6,7 +6,7 @@ h1{
 }
 /* Style header */
 header {
-  background: #333;
+  background: #0dd60d;
   padding: 15px;
   text-align: center;
 }
@@ -27,6 +27,7 @@ header a:hover {
   text-emphasis-color: blue;                /* change text color */
   border-bottom: 2px solid yellow; /* underline on hover */
   letter-spacing: 1px;           /* spacing effect */
+  border-radius: 15px;
 }
 h1{
     color:rgb(0, 204, 255);
@@ -37,4 +38,21 @@ h4:hover{
 }
 main{
   background-color: rgb(126, 149, 102);
+}
+.footer{
+  text-align: center;
+  background-color: #0dd60d;
+
+}
+footer a:hover{
+  color: blue;
+  transition: 0.3s;
+  border-radius:10px ;
+}
+footer .nav-link{
+  color: blue;
+  
+}
+.fa-brands{
+  width: 30px;
 }

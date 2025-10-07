@@ -1,25 +1,4 @@
 
-/*let cart = [];
-let total = 0;
-
-function addToCart(productName, price) {
-  // Add product to cart array
-  cart.push({ name: productName, price: price });
-
-  // Update cart count
-  document.getElementById("cart-count").textContent = cart.length;
-
-  // Update cart items
-  let cartItems = document.getElementById("cart-items");
-  let li = document.createElement("li");
-  li.textContent = productName + " - sh" + price;
-  cartItems.appendChild(li);
-
-  // Update total price
-  total += price;
-  document.getElementById("cart-total").textContent = total;
-}
-*/
 
 function addToCart(productName, price, imageUrl) {
   // Get existing cart or create empty

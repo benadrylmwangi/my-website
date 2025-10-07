@@ -41,6 +41,7 @@ form input {
 form button {
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 15px;
 }
 .login, .registration {
   flex: 1;
@@ -87,4 +88,14 @@ form button {
 
 form button:hover {
   background: #555;
+}
+button .link{
+   padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: #333;
+  color: white;
+  transition: 0.3s;
+  border-radius: 15px;
+
 }

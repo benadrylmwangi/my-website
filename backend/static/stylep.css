@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: #333;
+  background: hsl(115, 80%, 42%);
   color: white;
   padding: 15px;
   display: flex;
@@ -62,7 +62,7 @@ button:hover {
 .cart-details {
   margin: 10px;
   padding: 15px;
-  border-top: 2px solid #dabebe;
+  border-top: 2px solid #7c16c0;
 }
 h4{
  background-color:rgb(242, 0, 255) ; 
@@ -96,3 +96,49 @@ h4{
   padding: 5px;
 
 }
+#icon{
+  max-width: 200px;
+  border-radius: 15px;
+  border-color: black;
+}
+/* Container styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/* Search box wrapper */
+.search-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Search icon styling */
+.search-box .search-icon {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 18px;
+  color: #555;
+  pointer-events: none;
+}
+
+/* Textarea styling */
+.search-box textarea {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* left padding for icon space */
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+  transition: border 0.3s;
+}
+
+/* Hover & focus effects */
+.search-box textarea:focus {
+  border: 2px solid #007bff;
+}
+
